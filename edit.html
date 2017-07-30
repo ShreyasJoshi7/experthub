@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>Edit</title>
+
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<style>
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.profile-pic {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    vertical-align: middle;
+    text-align: center;
+    color: transparent;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.profile-pic:hover {
+    background-color: rgba(0,0,0,.5);
+    z-index: 10000;
+    color: #fff;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.profile-pic span {
+    display: inline-block;
+    padding-top: 4.5em;
+    padding-bottom: 4.5em;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar" >
+<a href="#about"  ><span class="glyphicon glyphicon-off"></span>Log Out</a>
+<a href="#about" ><span class="glyphicon glyphicon-home"></span>Home</a>
+<div style="
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 50px;
+	font-family: serif;
+">Lending Hand</div>
+</div>
+<br>
+<form >
+    <div class="container">
+	  <a href="#" class="profile-pic">
+  <div class="profile-pic" style="background-image: url('https://s3-eu-west-1.amazonaws.com/lynks-blog/wp-content/uploads/2016/10/11153439/rsz_1shutterstock_325243652.jpg')" >
+
+      <span class="glyphicon glyphicon-camera"></span>
+      <span>Change Image</span>
+
+  </div>
+</a>
+	  <label><b>Name:</b><br></label><br>
+      <input type="text" placeholder="Enter Name" name="name" >
+      <br><br>
+	  <label><b>Address:</b><br></label><br>
+      <input type="text" placeholder="Enter adress" name="address" >
+	  <br><br>
+	   <label><b>Contact No:</b><br></label><br>
+      <input type="text" placeholder="Enter Number" name="number" >
+	<br><br>
+	
+      <label><b>Email:</b><br></label><br>
+      <input type="text" placeholder="Enter Email" name="email" >
+      <br><br>
+<label><b>Description:</b><br></label><br>
+      <textarea rows="4" cols="50" name="comment" placeholder="Write Your Description"></textarea>
+      <br><br>
+        
+        <button type="submit" class="signupbtn">Save</button>
+     
+    </div>
+
+  </form>
